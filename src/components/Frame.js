@@ -26,6 +26,7 @@ export default class Frame extends React.Component {
                 <hr />
                 <section>
                     {children}
+                    
                 </section>
                 <hr />
                 <footer>
