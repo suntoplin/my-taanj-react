@@ -30,8 +30,10 @@ class App extends React.Component {
             <HashRouter>
                 <div>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/" replace >Home</Link></li>
+                        <li><Link to="/about" replace >About</Link></li>
+                        <li><Link to="/link" replace >Link</Link></li>
+                        <li><Link to="/photo" replace >Photo</Link></li>
                     </ul>
                     <hr />
                     <Frame>
@@ -40,9 +42,6 @@ class App extends React.Component {
                         <Route path="/link" component={Links} />
                         <Route path="/photo" component={Photos} />
                     </Frame>
-
-
-
                 </div>
             </HashRouter>
         );
@@ -50,6 +49,11 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+// enable hot module reload
+if(module.hot){
+    module.hot.accept();    
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
