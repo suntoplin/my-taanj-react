@@ -18,41 +18,45 @@ function Itemize(props) {
 // 同一個方框框 [ ] 包住的東西每一項必須有獨立的 key.
 // 可以是任何字串，只要同一個方框裡面都不一樣就好。
 
+// format of a person:
+// id: string;
+// title: string;
+// name: {
+//     en: string;
+//     zh: string;
+// };
+// email: string;
+
 const AboutData = Object.freeze({
-  boardMembers: [
+  people: [
     {
+      id:"1",
       title: "titleA",
-      name: "AAAAAA",
+      name: { en: "A", zh: "AB" },
       email: "titleA@gmail.com",
     },
     {
+      id:"2",
       title: "titleB",
-      name: "BBBBB",
+      name: { en: "B", zh: "AB" },
       email: "titleB@gmail.com",
     },
     {
+      id:"3",
       title: "titleC",
-      name: "CCCCC",
+      name: { en: "C", zh: "AB" },
       email: "titleC@gmail.com",
     },
     {
+      id:"4",
       title: "titleD",
-      name: "DDD",
+      name: { en: "DC", zh: "AB" },
       email: "titlDDeA@gmail.com",
     },
     {
-      title: "titleE",
-      name: "EEEEEE",
-      email: "EEE@gmail.com",
-    },
-    {
-      title: "titleF",
-      name: "FFFFFFF",
-      email: "titlFeA@gmail.com",
-    },
-    {
+      id:"5",
       title: "titleG",
-      name: "GGGGGG",
+      name: { en: "GC", zh: "AB" },
       email: "titleGGGGGG@gmail.com",
     }
   ]
