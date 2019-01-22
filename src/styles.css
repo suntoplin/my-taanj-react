@@ -1,0 +1,55 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i';
+
+html, body {
+  font-style: 15px;
+}
+
+@font-face {
+   font-family: 'DIN-Condensed';
+   src: url('./fonts/DIN-Condensed-Bold.ttf'); /* Safari, Android, iOS */
+ }
+
+@font-face {
+    font-family: 'DIN-Alternate';
+    src: url('./fonts/DIN-Alternate-Bold.ttf'); /* Safari, Android, iOS */
+  }
+
+
+body {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: normal;
+  line-height: 1.8;
+}
+
+
+.linkDecorated {
+  text-decoration: underline;
+  color: #333;
+}
+
+a {
+  color: #17906a;
+}
+
+a:hover {
+  color: #007e00;
+}
+
+li {
+  text-align: left;
+}
+
+.bodyText {
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .bodyTextAbout {
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: left;
+  }
