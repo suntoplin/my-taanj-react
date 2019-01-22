@@ -23,7 +23,7 @@ function Itemize(props) {
 // title: string;
 // name: {
 //     en: string;
-//     zh: string;
+//     tw: string; (optional)
 // };
 // email: string;
 
@@ -32,31 +32,31 @@ const AboutData = Object.freeze({
     {
       id:"1",
       title: "titleA",
-      name: { en: "A", zh: "AB" },
+      name: { en: "A", tw: "" },
       email: "titleA@gmail.com",
     },
     {
       id:"2",
       title: "titleB",
-      name: { en: "B", zh: "AB" },
+      name: { en: "B", tw: "EST" },
       email: "titleB@gmail.com",
     },
     {
       id:"3",
       title: "titleC",
-      name: { en: "C", zh: "AB" },
+      name: { en: "C", tw: "AB" },
       email: "titleC@gmail.com",
     },
     {
       id:"4",
       title: "titleD",
-      name: { en: "DC", zh: "AB" },
+      name: { en: "DC", tw: "AB" },
       email: "titlDDeA@gmail.com",
     },
     {
       id:"5",
       title: "titleG",
-      name: { en: "GC", zh: "AB" },
+      name: { en: "GC", tw: "AB" },
       email: "titleGGGGGG@gmail.com",
     }
   ]
