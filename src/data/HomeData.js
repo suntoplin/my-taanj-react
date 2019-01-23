@@ -21,57 +21,164 @@ function Paragraph(props) {
 const HomeData = Object.freeze({
   activities: [
     {
-      id:"1",
+      id: "1",
       title: "activity1",
       name: { en: "A", tw: "" },
       email: "titleA@gmail.com"
     },
     {
-      id:"2",
+      id: "2",
       title: "activity2",
       name: { en: "B", tw: "EST" },
       email: "titleB@gmail.com"
     }
   ],
-  aims:[    {
-    id:"1",
+  aims: [{
+    id: "1",
     title: "AIM1",
     image: "AIM1@gmail.com"
   },
   {
-    id:"2",
+    id: "2",
     title: "AIM2",
     image: "AIM2@gmail.com"
-  }], 
+  }],
   events: [
-      {
-         id:"1",
-         date:"2/28/2015",
-         title:{en:"",tw:""},
-         description:{en:"",tw:""},
-         time:{start:"",end:""},          
-         place:"",
-         address:"",
-         detail:[
-         <Paragraph key="p1">2015</Paragraph>,
-         <Paragraph key="p2">P2asdg2</Paragraph>,],
-         icon:"",
-         image:"",      
-         contact:[
-             {
-                title:"",
-                name:"",
-                email:"",
-            }],
-         photos:{
-             images:[
-                 {img:"../images/about.png"},
-                 {img:"../images/contact.png"},
-                 {img:"../images/program.png"},
-                 {img:"../images/speaker.png"}],
-             link:"",
-         } 
-      }    
+    {
+      id: "1",
+      date: "2/28/2015",
+      title: { en: "", tw: "" },
+      description: { en: "", tw: "" },
+      time: { start: "", end: "" },
+      place: "",
+      address: "",
+      detail: [
+        <Paragraph key="p1">2015</Paragraph>,
+        <Paragraph key="p2">P2asdg2</Paragraph>,],
+      icon: "",
+      image: "",
+      contact: [
+        {
+          title: "",
+          name: "",
+          email: "",
+        }],
+      photos: [
+        { img: "images/about.png" },
+        { img: "images/program.png" },
+        { img: "images/about.png" },
+        { img: "images/speaker.png" }
+      ],
+      link: ""
+    },
+    {
+      id: "2",
+      date: "2/28/2015",
+      title: { en: "", tw: "" },
+      description: { en: "", tw: "" },
+      time: { start: "", end: "" },
+      place: "",
+      address: "",
+      detail: [
+        <Paragraph key="p1">2015</Paragraph>,
+        <Paragraph key="p2">P2asdg2</Paragraph>,],
+      icon: "",
+      image: "",
+      contact: [
+        {
+          title: "",
+          name: "",
+          email: "",
+        }],
+      photos: [
+        { img: "images/about.png" },
+        { img: "images/program.png" },
+        { img: "images/about.png" },
+        { img: "images/speaker.png" }
+      ],
+      link: ""
+    },
+    {
+      id: "3",
+      date: "2/28/2015",
+      title: { en: "", tw: "" },
+      description: { en: "", tw: "" },
+      time: { start: "", end: "" },
+      place: "",
+      address: "",
+      detail: [
+        <Paragraph key="p1">2015</Paragraph>,
+        <Paragraph key="p2">P2asdg2</Paragraph>,],
+      icon: "",
+      image: "",
+      contact: [
+        {
+          title: "",
+          name: "",
+          email: "",
+        }],
+      photos: [
+        { img: "images/about.png" },
+        { img: "images/program.png" },
+        { img: "images/about.png" },
+        { img: "images/speaker.png" }
+      ],
+      link: ""
+    },
+    {
+      id: "4",
+      date: "2/28/2015",
+      title: { en: "", tw: "" },
+      description: { en: "", tw: "" },
+      time: { start: "", end: "" },
+      place: "",
+      address: "",
+      detail: [
+        <Paragraph key="p1">2015</Paragraph>,
+        <Paragraph key="p2">P2asdg2</Paragraph>,],
+      icon: "",
+      image: "",
+      contact: [
+        {
+          title: "",
+          name: "",
+          email: "",
+        }],
+      photos: [
+        { img: "images/about.png" },
+        { img: "images/program.png" },
+        { img: "images/about.png" },
+        { img: "images/speaker.png" }
+      ],
+      link: ""
+    },
+    {
+      id: "5",
+      date: "2/28/2015",
+      title: { en: "", tw: "" },
+      description: { en: "", tw: "" },
+      time: { start: "", end: "" },
+      place: "",
+      address: "",
+      detail: [
+        <Paragraph key="p1">2015</Paragraph>,
+        <Paragraph key="p2">P2asdg2</Paragraph>,],
+      icon: "",
+      image: "",
+      contact: [
+        {
+          title: "",
+          name: "",
+          email: "",
+        }],
+      photos: [
+        { img: "images/about.png" },
+        { img: "images/program.png" },
+        { img: "images/about.png" },
+        { img: "images/speaker.png" }
+      ],
+      link: ""
+    },
   ]
 
 });
