@@ -47,7 +47,7 @@ const HomeData = Object.freeze({
     {
       id: "1",
       date: "2/28/2015",
-      title: { en: "", tw: "" },
+      title: { en: "P2asdg2", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
@@ -69,12 +69,12 @@ const HomeData = Object.freeze({
         { img: "images/about.png" },
         { img: "images/speaker.png" }
       ],
-      link: ""
+      link: "https://www.taiwannews.com.tw/en/index"
     },
     {
       id: "2",
-      date: "2/28/2015",
-      title: { en: "", tw: "" },
+      date: "2/28/2016",
+      title: { en: "P2asdg2", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
@@ -96,12 +96,12 @@ const HomeData = Object.freeze({
         { img: "images/about.png" },
         { img: "images/speaker.png" }
       ],
-      link: ""
+      link: "http://news.ltn.com.tw/"
     },
     {
       id: "3",
-      date: "2/28/2015",
-      title: { en: "", tw: "" },
+      date: "2/28/2017",
+      title: { en: "P2asdg2", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
@@ -123,12 +123,12 @@ const HomeData = Object.freeze({
         { img: "images/about.png" },
         { img: "images/speaker.png" }
       ],
-      link: ""
+      link: "https://github.com/"
     },
     {
       id: "4",
-      date: "2/28/2015",
-      title: { en: "", tw: "" },
+      date: "2/28/2018",
+      title: { en: "P2asdg2", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
@@ -150,12 +150,12 @@ const HomeData = Object.freeze({
         { img: "images/about.png" },
         { img: "images/speaker.png" }
       ],
-      link: ""
+      link: "http://news.ltn.com.tw/"
     },
     {
       id: "5",
-      date: "2/28/2015",
-      title: { en: "", tw: "" },
+      date: "2/28/2019",
+      title: { en: "P2asdg2", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
@@ -177,7 +177,7 @@ const HomeData = Object.freeze({
         { img: "images/about.png" },
         { img: "images/speaker.png" }
       ],
-      link: ""
+      link: "http://news.ltn.com.tw/"
     },
   ]
 
