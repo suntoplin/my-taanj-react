@@ -44,18 +44,14 @@ export default class Home extends React.PureComponent {
             <div>
                 <Container>
                     <Row>
-                        <Col md={12}>
+                        <Col md={12} className="mui--text-center">
                             <h2> Single Item</h2>
                             <Slider {...settings}>
-                                {
-                                    HomeData.events[0].photos.map(
-                                        (image, i) =>
-                                            <div key={i}>
-                                                <img src={require(`../${image.img}`)} alt={"test"} />
-                                                <h3>{image.img}</h3>
-                                            </div>
-                                    )
-                                }
+                                {HomeData.events[0].photos.map((image, i) =>
+                                    <div key={i} >
+                                        <img src={require(`../${image.img}`)} alt={"test"} className="mui--text-center" />
+                                        <h3>{image.img}</h3>
+                                    </div>)}
                             </Slider>
                             <hr />
                         </Col>
