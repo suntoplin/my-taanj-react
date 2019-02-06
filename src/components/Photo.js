@@ -1,7 +1,7 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 import Button from "muicss/lib/react/button";
 import Container from 'muicss/lib/react/container';

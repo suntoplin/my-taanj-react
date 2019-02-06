@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Appbar from 'muicss/lib/react/appbar';
+import styles from '../index.css';
 
 export default class Frame extends React.Component {
     constructor(props) {

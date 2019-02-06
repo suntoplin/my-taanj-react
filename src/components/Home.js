@@ -1,5 +1,5 @@
 import React from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Slider from "react-slick";
 
@@ -10,6 +10,7 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 
 import HomeData from '../data/HomeData';
+// import styles from '../index.css';
 
 // functional component wi lazy load => lazy load causes additional files(Type: text/html)
 // function Image(props) {
@@ -49,6 +50,14 @@ export default class Home extends React.PureComponent {
 
         return (
             <div>
+            <Container>
+                <Row>
+                    <Col>
+                        <h1>Blockquote</h1>
+                        <blockquote >jewiotjew;gaoihdf ;oaihjn'</blockquote>
+                    </Col>
+                </Row>
+            </Container>
                 <Container>
                     <Row>
                         <Col md={12} className="mui--text-center">
