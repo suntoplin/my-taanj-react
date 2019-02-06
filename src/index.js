@@ -6,7 +6,7 @@ import Frame from './components/Frame';
 import Home from './components/Home';
 import Links from './components/Link';
 // import Landing from './components/Landing';
-// import Photos from './components/Photo';
+import Photos from './components/Photo';
 
 import { HashRouter, Route, Link } from "react-router-dom"
 
@@ -40,7 +40,7 @@ class App extends React.Component {
                         <li><Link to="/" replace >Home</Link></li>
                         <li><Link to="/about" replace >About</Link></li>
                         <li><Link to="/link" replace >Link</Link></li>
-                        {/* <li><Link to="/photo" replace >Photo</Link></li> */}
+                        <li><Link to="/photo" replace >Photo</Link></li>
                     </ul>
                     <hr />
                     <Frame>
@@ -48,7 +48,7 @@ class App extends React.Component {
 
                         <Route path="/about" component={About} />
                         <Route path="/link" component={Links} />
-                        {/* <Route path="/photo" component={Photos} /> */}
+                        <Route path="/photo" component={Photos} />
                     </Frame>
                 </div>
                 {/* </Suspense> */}
@@ -68,3 +68,4 @@ if (module.hot) {
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
+// serviceWorker.register();

@@ -11,10 +11,17 @@ import Col from 'muicss/lib/react/col';
 
 import HomeData from '../data/HomeData';
 
-// functional component
+// functional component wi lazy load => lazy load causes additional files(Type: text/html)
+// function Image(props) {
+//     const { source } = props;
+//     return <LazyLoadImage alt={" "} effect="blur" width={`100%`} src={require(`../${source}`)} />;
+// }
+
+// functional component wo lazy load
 function Image(props) {
     const { source } = props;
-    return <LazyLoadImage alt={" "} effect="blur" width={`100%`} src={require(`../${source}`)} />;
+    return <img alt={" "} width={`100%`} src={require(`../${source}`)} />
+    ;
 }
 
 // pure component
