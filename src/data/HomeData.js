@@ -47,14 +47,14 @@ const HomeData = Object.freeze({
     {
       id: "1",
       date: "2/28/2015",
-      title: { en: "P2asdg2", tw: "" },
+      title: { en: "A sunny day", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
       address: "",
       detail: [
         <Paragraph key="p1">2015</Paragraph>,
-        <Paragraph key="p2">P2asdg2</Paragraph>,],
+        <Paragraph key="p2">Paragraph</Paragraph>,],
       icon: "",
       image: "",
       contact: [
@@ -74,14 +74,14 @@ const HomeData = Object.freeze({
     {
       id: "2",
       date: "2/28/2016",
-      title: { en: "P2asdg2", tw: "" },
+      title: { en: "Be awesome", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
       address: "",
       detail: [
-        <Paragraph key="p1">2015</Paragraph>,
-        <Paragraph key="p2">P2asdg2</Paragraph>,],
+        <Paragraph key="p1">2016</Paragraph>,
+        <Paragraph key="p2">Paragraph</Paragraph>,],
       icon: "",
       image: "",
       contact: [
@@ -101,14 +101,14 @@ const HomeData = Object.freeze({
     {
       id: "3",
       date: "2/28/2017",
-      title: { en: "P2asdg2", tw: "" },
+      title: { en: "Make it right!!", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
       address: "",
       detail: [
-        <Paragraph key="p1">2015</Paragraph>,
-        <Paragraph key="p2">P2asdg2</Paragraph>,],
+        <Paragraph key="p1">2017</Paragraph>,
+        <Paragraph key="p2">Paragraph</Paragraph>,],
       icon: "",
       image: "",
       contact: [
@@ -128,14 +128,14 @@ const HomeData = Object.freeze({
     {
       id: "4",
       date: "2/28/2018",
-      title: { en: "P2asdg2", tw: "" },
+      title: { en: "Rokc it~~~", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
       address: "",
       detail: [
-        <Paragraph key="p1">2015</Paragraph>,
-        <Paragraph key="p2">P2asdg2</Paragraph>,],
+        <Paragraph key="p1">2018</Paragraph>,
+        <Paragraph key="p2">Paragraph</Paragraph>,],
       icon: "",
       image: "",
       contact: [
@@ -155,14 +155,14 @@ const HomeData = Object.freeze({
     {
       id: "5",
       date: "2/28/2019",
-      title: { en: "P2asdg2", tw: "" },
+      title: { en: "Let's Dance", tw: "" },
       description: { en: "", tw: "" },
       time: { start: "", end: "" },
       place: "",
       address: "",
       detail: [
-        <Paragraph key="p1">2015</Paragraph>,
-        <Paragraph key="p2">P2asdg2</Paragraph>,],
+        <Paragraph key="p1">2019</Paragraph>,
+        <Paragraph key="p2">Paragraph</Paragraph>,],
       icon: "",
       image: "",
       contact: [
