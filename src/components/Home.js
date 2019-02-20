@@ -13,6 +13,8 @@ import Col from 'muicss/lib/react/col';
 import HomeData from '../data/HomeData';
 import styles from '../index.css';
 
+
+
 // functional component wi lazy load => lazy load causes additional files(Type: text/html)
 // function Image(props) {
 //     const { source } = props;
@@ -53,51 +55,61 @@ export default class Home extends React.PureComponent {
         const viewPortWidth = window.innerWidth;
         const isMobile = viewPortWidth < 600;
 
+        // const settings = {
+        //     dots: true,
+        //     infinite: true,
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     autoplay: true,
+        //     autoplaySpeed: 2000
+        // };
+
         const settings = {
             dots: true,
+            fade: true,
             infinite: true,
             lazyLoad: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            speed: 500,
             autoplay: true,
-            autoplaySpeed: 2000
+            slidesToShow: 1,
+            slidesToScroll: 1
         };
 
-        const EventList = (
-            <Container>
-                <Row>
-                    <Col><h2 className="mui--text-center">Todo list</h2></Col>
-                </Row>
-                {HomeData.events.map((item, eventIndex) => {
-                    const isClosed = this.state.openedTitle === item.title.en;
-                    return (
-                        <Row key={eventIndex}  >
-                            <div onClick={() => this.handleProgramClick(item.title.en)} >
-                                <Col>
-                                    Title: {item.title.en}
+        // const EventList = (
+        //     <Container>
+        //         <Row>
+        //             <Col><h2 className="mui--text-center">Todo list</h2></Col>
+        //         </Row>
+        //         {HomeData.events.map((item, eventIndex) => {
+        //             const isClosed = this.state.openedTitle === item.title.en;
+        //             return (
+        //                 <Row key={eventIndex}  >
+        //                     <div onClick={() => this.handleProgramClick(item.title.en)} >
+        //                         <Col>
+        //                             Title: {item.title.en}
 
-                                    <Motion
-                                        defaultStyle={{ h: 0 }}
-                                        style={{
-                                            h: isClosed ?
-                                                spring(130)
-                                                : spring(0)
-                                        }}>
-                                        {({ h }) =>
-                                            <div style={{ height: h }}>
-                                                <div style={{ margin: 30, marginTop: 20 }}>
-                                                    {isClosed && item.detail}
-                                                </div>
-                                            </div>
-                                        }
-                                    </Motion>
-                                </Col>
-                            </div>
-                        </Row>
-                    )
-                })}
-            </Container>
-        );
+        //                             <Motion
+        //                                 defaultStyle={{ h: 0 }}
+        //                                 style={{
+        //                                     h: isClosed ?
+        //                                         spring(130)
+        //                                         : spring(0)
+        //                                 }}>
+        //                                 {({ h }) =>
+        //                                     <div style={{ height: h }}>
+        //                                         <div style={{ margin: 30, marginTop: 20 }}>
+        //                                             {isClosed && item.detail}
+        //                                         </div>
+        //                                     </div>
+        //                                 }
+        //                             </Motion>
+        //                         </Col>
+        //                     </div>
+        //                 </Row>
+        //             )
+        //         })}
+        //     </Container>
+        // );
 
         // const Quote = (
         //     <Container>
@@ -134,29 +146,29 @@ export default class Home extends React.PureComponent {
         //     </Container>
         // );
 
-        // const EventCarousel = (
-        //     <Container>
-        //         <Row>
-        //             <Col md={12} className="mui--text-center">
-        //                 <h2>react-slick carousel demo </h2>
-        //                 <Slider {...settings}>
-        //                     {HomeData.events[0].photos.map((image, i) =>
-        //                         <div key={i} >
-        //                             <img src={require(`../${image.img}`)} alt={"test"} className="mui--text-center" />
-        //                             <h3>{image.img}</h3>
-        //                         </div>)}
-        //                 </Slider>
-        //                 <hr />
-        //             </Col>
-        //         </Row>
-        //     </Container>
-        // );
+        const EventCarousel = (
+            <Container fluid={true}>
+                <Row>
+                    <Col md={12} className="mui--text-center" >
+                        <h2 >react-slick carousel demo </h2>
+                        <Slider {...settings}>
+                            {HomeData.events[0].photos.map((image, i) =>
+                                <div key={i}>
+                                    <img src={require(`../${image.img}`)} alt={"test"} width={'100%'} height={'100'} />
+                                    <h3> {image.img}</h3>
+                                </div>)}
+                        </Slider>
+                        <hr />
+                    </Col>
+                </Row>
+            </Container>
+        );
 
         return (
             <div>
-                {EventList}
+                {/* {EventList} */}
                 {/* {Quote} */}
-                {/* {EventCarousel} */}
+                {EventCarousel}
                 {/* {EventPhotos} */}
             </div>
         );
