@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import Button from "muicss/lib/react/button";
 import Container from 'muicss/lib/react/container';

@@ -1,11 +1,9 @@
 import React from 'react';
 
-export default class Links extends React.Component {
-    render() {
-        return (
-            <div>
-                Links
-            </div>
-        );
-    }
+export default function Links() {
+    return (
+        <div>
+            Links
+        </div>
+    );
 }

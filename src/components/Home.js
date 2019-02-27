@@ -1,42 +1,60 @@
-import React from 'react';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
+import React,{useState} from 'react';
 
 import Slider from "react-slick";
-import { Motion, spring } from 'react-motion';
+// import { Motion, spring } from 'react-motion';
 
-import Button from "muicss/lib/react/button";
+// import Button from "muicss/lib/react/button";
 import Container from 'muicss/lib/react/container';
-import Divider from 'muicss/lib/react/divider';
+// import Divider from 'muicss/lib/react/divider';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 
 import HomeData from '../data/HomeData';
-import styles from '../index.css';
+// import styles from '../index.css';
 
+export default function Home() {
+    const [openedTitle, setOpenedTitle] = useState(null);
+    const viewPortWidth = window.innerWidth;
+    const isMobile = viewPortWidth < 600;  
+    const settings = {
+        dots: true,
+        fade: true,
+        infinite: true,
+        lazyLoad: true,
+        speed: 500,
+        autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+    const EventCarousel = (
+        <Container fluid={true}>
+            <Row>
+                <Col md={12} className="mui--text-center" >
+                    <h2 >react-slick carousel demo </h2>
+                    <Slider {...settings}>
+                        {HomeData.events[0].photos.map((image, i) =>
+                            <div key={i}>
+                                <img src={require(`../${image.img}`)} alt={"test"} width={'100%'} height={'100'} />
+                                <h3> {image.img}</h3>
+                            </div>)}
+                    </Slider>
+                    <hr />
+                </Col>
+            </Row>
+        </Container>
+    );
 
-
-// functional component wi lazy load => lazy load causes additional files(Type: text/html)
-// function Image(props) {
-//     const { source } = props;
-//     return <LazyLoadImage alt={" "} effect="blur" width={`100%`} src={require(`../${source}`)} />;
-// }
-
-// functional component wo lazy load
-function Image(props) {
-    const { source } = props;
-    return <img alt={" "} width={`100%`} src={require(`../${source}`)} />
-        ;
+    return (
+        <div>
+            {/* {EventList} */}
+            {/* {Quote} */}
+            {EventCarousel}
+            {/* {EventPhotos} */}
+        </div>
+    );
 }
 
-// pure component
-// class Image extends React.PureComponent {
-//     render() {
-//         const { source } = this.props;
-//         return <LazyLoadImage alt={" "} effect="blur" width={`100%`} src={require(`../${source}`)} />;
-//     }
-// }
-
-export default class Home extends React.PureComponent {
+export class HomeOld extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -54,15 +72,6 @@ export default class Home extends React.PureComponent {
     render() {
         const viewPortWidth = window.innerWidth;
         const isMobile = viewPortWidth < 600;
-
-        // const settings = {
-        //     dots: true,
-        //     infinite: true,
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     autoplay: true,
-        //     autoplaySpeed: 2000
-        // };
 
         const settings = {
             dots: true,
