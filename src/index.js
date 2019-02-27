@@ -34,24 +34,12 @@ class App extends React.Component {
     render() {
         return (
             <HashRouter>
-                {/* <Suspense fallback={<div><img alt="loading" src="https://media.giphy.com/media/y1ZBcOGOOtlpC/200.gif" /></div>}> */}
-                <div>
-                    <ul>
-                        <li><Link to="/" replace >Home</Link></li>
-                        <li><Link to="/about" replace >About</Link></li>
-                        <li><Link to="/link" replace >Link</Link></li>
-                        <li><Link to="/photo" replace >Photo</Link></li>
-                    </ul>
-                    <hr />
-                    <Frame>
-                        <Route exact path="/" component={Home} />
-
-                        <Route path="/about" component={About} />
-                        <Route path="/link" component={Links} />
-                        <Route path="/photo" component={Photos} />
-                    </Frame>
-                </div>
-                {/* </Suspense> */}
+                <Frame>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about"  component={About} />
+                    <Route path="/link"   component={Links} />
+                    <Route path="/photo"  component={Photos} />
+                </Frame>
             </HashRouter>
         );
     }
