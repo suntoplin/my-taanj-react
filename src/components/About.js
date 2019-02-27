@@ -9,30 +9,28 @@ import AboutData from '../data/AboutData';
 
 function Persion(props) {
     const { title, enName, twName, email } = props;
-    return <div>
+    return <>
         <p>{title}</p>
         <p>{enName} {twName && <span> ({twName}) </span>}</p>
         <p>{email}</p>
-    </div>;
+    </>;
+
+
 }
 
 export default function About() {
     const viewPortWidth = window.innerWidth;
     const isMobile = viewPortWidth < 600;
     return (
-        <>
-            <Container>
-                <Row>
-                    {AboutData.people.map((person, id) =>
-                        <Col key={id} md={isMobile ? 12 : 6}>
-                            <Persion title={person.title} enName={person.name.en} twName={person.name.tw} email={person.email} />
-                            <Divider />
-                        </Col>
-                    )}
-                </Row>
-            </Container>
-            <br />
-        </>
+        <Container>
+            <Row>
+                {AboutData.people.map((person, id) =>
+                    <Col key={id} md={isMobile ? 12 : 6}>
+                        <Persion title={person.title} enName={person.name.en} twName={person.name.tw} email={person.email} />
+                        <Divider />
+                    </Col>
+                )}
+            </Row>
+        </Container>
     );
-
 }

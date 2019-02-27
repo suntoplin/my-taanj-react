@@ -5,7 +5,6 @@ import About from './components/About';
 import Frame from './components/Frame';
 import Home from './components/Home';
 import Links from './components/Link';
-// import Landing from './components/Landing';
 import Photos from './components/Photo';
 
 import { HashRouter, Route } from "react-router-dom"
@@ -29,20 +28,17 @@ import * as serviceWorker from './serviceWorker';
 // const Photos = lazy(() => import('./components/Photo'));
 // const Frame = lazy(() => import('./components/Frame'));
 
-
-class App extends React.Component {
-    render() {
-        return (
-            <HashRouter>
-                <Frame>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about"  component={About} />
-                    <Route path="/link"   component={Links} />
-                    <Route path="/photo"  component={Photos} />
-                </Frame>
-            </HashRouter>
-        );
-    }
+function App(){
+    return (
+        <HashRouter>
+            <Frame>
+                <Route exact path="/" component={Home} />
+                <Route path="/about"  component={About} />
+                <Route path="/link"   component={Links} />
+                <Route path="/photo"  component={Photos} />
+            </Frame>
+        </HashRouter>
+    );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -55,5 +51,5 @@ if (module.hot) {
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
-// serviceWorker.register();
+// serviceWorker.unregister();
+serviceWorker.register();
