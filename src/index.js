@@ -8,7 +8,7 @@ import Links from './components/Link';
 // import Landing from './components/Landing';
 import Photos from './components/Photo';
 
-import { HashRouter, Route, Link } from "react-router-dom"
+import { HashRouter, Route } from "react-router-dom"
 
 import * as serviceWorker from './serviceWorker';
 

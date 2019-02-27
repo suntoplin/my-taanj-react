@@ -20,7 +20,7 @@ export default function About() {
     const viewPortWidth = window.innerWidth;
     const isMobile = viewPortWidth < 600;
     return (
-        <div>
+        <>
             <Container>
                 <Row>
                     {AboutData.people.map((person, id) =>
@@ -32,7 +32,7 @@ export default function About() {
                 </Row>
             </Container>
             <br />
-        </div>
+        </>
     );
 
 }

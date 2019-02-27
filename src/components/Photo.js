@@ -15,7 +15,7 @@ function Image(props) {
 
 function Albums(props) {
     const { photos, isMobile } = props;
-    return <div>{photos.map((image, i) => <Col key={i} md={isMobile ? 12 : 3}><Image source={image.img} /></Col>)}</div>;
+    return <>{photos.map((image, i) => <Col key={i} md={isMobile ? 12 : 3}><Image source={image.img} /></Col>)}</>;
 }
 
 export default function Photos() {

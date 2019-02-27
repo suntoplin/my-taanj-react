@@ -17,7 +17,7 @@ export default function Frame(props) {
 
     
     return (
-        <div>
+        <>
             <Appbar className={styles.bar}>
                 <div className={styles.headerContainer}>
                     <Row>
@@ -57,7 +57,7 @@ export default function Frame(props) {
             <Appbar>
                 <footer className="mui--text-dark-hint">2019@FPCF ( viewPortWidth: {viewPortWidth} px )</footer>
             </Appbar>
-        </div>
+        </>
     );
 }
 
